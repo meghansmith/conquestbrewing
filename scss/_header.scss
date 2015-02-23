@@ -1,0 +1,49 @@
+header{
+	background: url("../images/tapsLD.jpg") no-repeat;
+	background-size: cover;
+	h1 {
+		display: inline-block;
+		width: 37%;
+	}
+	.darkBackground {
+		background-color: rgba(0, 0, 0, .5)
+	}
+	nav {
+		display: inline-block;
+		width: 59%;
+		margin-bottom: $marM;
+	}
+	ul{
+		padding: 0;
+		list-style: none;
+	}
+	li{
+		display: inline;
+
+	}
+	a{
+		display: inline-block;
+		width: 100%;
+	}
+	h2{
+		color: $gold;
+		text-align: center;
+		font-size: 2.0em;
+		margin-bottom: 5px;
+		span{
+			font-size: 1.95em;
+		}
+	}
+	h3{
+		color: $red;
+		text-align: center;
+		text-shadow: 1px 1px 1px #000;
+		padding-bottom: $marL;
+		font-size: 2.05em;
+		margin: 0;
+		span{
+			color: $gold;
+		}
+	}
+
+}

@@ -97,15 +97,25 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, a{
+    font-family: $font1;
+}
+p{
+    font-family: $font2;
+}
 .logoReplace a {
     display: block;
-    width: 0;
-    height:0;
+    width: 120px;
+    height: 90px;
     background-size: contain;
-    background-image: url("");
+    background-image: url("../images/logoclear.png");
     text-indent: -9999px;
     margin: 0 auto;
+    position: absolute;
+    top: 10px;
 }
 .imageReplace1{
 
@@ -116,18 +126,21 @@ textarea {
 .lightBackground{
 
 }
-form label .big {
-
-}
-
 
 .intro{
-
+    font-weight: bold;
 }
-wrapper {
+.wrapper {
+    width: 100%;
     padding: 0 10px;
 }
-
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+}
 
 
 

@@ -81,17 +81,39 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, a {
+  font-family: "Nixie One", sans-serif; }
+
+p {
+  font-family: "Open Sans", sans-serif; }
+
 .logoReplace a {
   display: block;
-  width: 0;
-  height: 0;
+  width: 120px;
+  height: 90px;
   background-size: contain;
-  background-image: url("");
+  background-image: url("../images/logoclear.png");
   text-indent: -9999px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: absolute;
+  top: 10px; }
 
-wrapper {
+.intro {
+  font-weight: bold; }
+
+.wrapper {
+  width: 100%;
   padding: 0 10px; }
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px; }
 
 /* ==========================================================================
    Helper classes
@@ -228,5 +250,41 @@ wrapper {
   h2,
   h3 {
     page-break-after: avoid; } }
+header {
+  background: url("../images/tapsLD.jpg") no-repeat;
+  background-size: cover; }
+  header h1 {
+    display: inline-block;
+    width: 37%; }
+  header .darkBackground {
+    background-color: rgba(0, 0, 0, 0.5); }
+  header nav {
+    display: inline-block;
+    width: 59%;
+    margin-bottom: 50px; }
+  header ul {
+    padding: 0;
+    list-style: none; }
+  header li {
+    display: inline; }
+  header a {
+    display: inline-block;
+    width: 100%; }
+  header h2 {
+    color: #aea468;
+    text-align: center;
+    font-size: 2.0em;
+    margin-bottom: 5px; }
+    header h2 span {
+      font-size: 1.95em; }
+  header h3 {
+    color: #932a28;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    padding-bottom: 70px;
+    font-size: 2.05em;
+    margin: 0; }
+    header h3 span {
+      color: #aea468; }
 
 /*# sourceMappingURL=style.css.map */
