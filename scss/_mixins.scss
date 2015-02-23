@@ -1,4 +1,4 @@
-@mixin bp($point){
+ @mixin bp($point){
 	@media ('min-width:' + $point){
 		@content; //this takes all the content and dumps it
 	}
