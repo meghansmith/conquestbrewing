@@ -103,6 +103,13 @@ p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.2em; }
 
+.about .quote1, .team .quote2, .team .quote3 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 1.6em;
+  margin-bottom: 70px; }
+
 .logoReplace a {
   display: block;
   width: 130px;
@@ -119,7 +126,7 @@ p {
 
 .wrapper {
   width: 100%;
-  padding: 0 10px; }
+  padding: 0 20px; }
 
 .buttonL, .buttonD {
   font-family: "Nixie One", sans-serif;
@@ -460,12 +467,7 @@ p {
     font-weight: 300;
     margin-bottom: 70px; }
   .about .quote1 {
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 80%;
-    margin: 0 auto;
-    padding: 10px;
-    line-height: 1.6em;
-    margin-bottom: 70px; }
+    background-color: rgba(255, 255, 255, 0.2); }
   .about .bolder {
     font-weight: 700; }
   .about .attribution {
@@ -490,5 +492,68 @@ p {
       color: #932a28; }
     .about .beerQuote .red {
       color: #932a28; }
+
+.team {
+  margin-top: -25px; }
+  .team .lightTaps {
+    background: url("../images/tapsLD.jpg") no-repeat;
+    background-size: cover;
+    background-position: right; }
+    .team .lightTaps img {
+      width: 50%;
+      max-width: 100%;
+      float: right;
+      padding: 5px 0 10px 20px; }
+    .team .lightTaps .lightBackground {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding-top: 70px; }
+  .team .lightBackground {
+    padding-bottom: 1px; }
+  .team h3 {
+    color: #932a28;
+    margin-bottom: 50px; }
+  .team p {
+    margin-bottom: 50px; }
+  .team .quote2, .team .quote3 {
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.2); }
+    .team .quote2 .bolder, .team .quote3 .bolder {
+      font-weight: 700; }
+    .team .quote2 .bigBold, .team .quote3 .bigBold {
+      font-weight: 400;
+      font-size: 1.25em; }
+    .team .quote2 .attribution, .team .quote3 .attribution {
+      font-size: .7em; }
+  .team .lightFlight {
+    background-image: url(../images/flightLD.jpg);
+    background-size: cover;
+    background-position: 400px;
+    margin-top: -20px; }
+    .team .lightFlight .lightBackground {
+      background-color: rgba(255, 255, 255, 0.6); }
+    .team .lightFlight img {
+      width: 50%;
+      max-width: 100%;
+      float: left;
+      padding: 5px 20px 10px 0px; }
+
+.mainFooter {
+  background-image: url(../images/map.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 70px; }
+  .mainFooter p {
+    color: #fff;
+    font-style: .9em;
+    text-align: center;
+    font-weight: 300; }
+  .mainFooter .contact {
+    margin-bottom: 70px;
+    padding-bottom: 70px; }
+  .mainFooter .hours {
+    padding-bottom: 50px; }
+  .mainFooter .copyright {
+    font-size: .7em;
+    padding-bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */

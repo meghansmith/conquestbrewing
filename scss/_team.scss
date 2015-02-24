@@ -1,0 +1,61 @@
+.team{
+	margin-top: -25px;
+	.lightTaps{
+		background: url("../images/tapsLD.jpg") no-repeat;
+		background-size: cover;
+		background-position: right;
+
+		img {
+			width: 50%;
+			max-width: 100%;
+			float: right;
+			padding: 5px 0 10px 20px;
+		}
+		.lightBackground{
+			background-color: rgba(255,255,255, .7);
+			padding-top: $marL;
+		}
+	}
+	
+	.lightBackground {
+		padding-bottom: 1px;
+	}
+	h3{
+		color: $red;
+		margin-bottom: $marM;
+	}
+	p{
+		margin-bottom: $marM;
+	}
+	.quote2, .quote3{
+		@extend %quote;
+		font-weight: 300;
+		background-color: rgba(0,0,0, .2);
+
+		.bolder{
+			font-weight: 700;
+		}
+		.bigBold{
+			font-weight: 400;
+			font-size: 1.25em;
+		}
+		.attribution{
+			font-size: .7em;
+		}
+	}
+	.lightFlight{
+		background-image: url(../images/flightLD.jpg);
+		background-size: cover;
+		background-position: 400px;
+		margin-top: -20px;
+		.lightBackground{
+			background-color: rgba(255,255,255, .6);
+		}
+		img {
+			width: 50%;
+			max-width: 100%;
+			float: left;
+			padding: 5px 20px 10px 0px;
+		}
+	}
+}

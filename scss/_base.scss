@@ -119,6 +119,13 @@ p{
     font-family: $font2;
     font-size: 1.2em;
 }
+%quote{
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        line-height: 1.6em;
+        margin-bottom: $marL;
+}
 .logoReplace a {
     display: block;
     width: 130px;
@@ -138,7 +145,7 @@ p{
 }
 .wrapper {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 %button {
     font-family: $font1;

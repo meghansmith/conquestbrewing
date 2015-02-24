@@ -1,0 +1,23 @@
+.mainFooter{
+	background-image: url(../images/map.jpg);
+	background-size: cover;
+	background-position: center;
+	padding-top: $marL;
+	p{
+		color: #fff;
+		font-style: .9em;
+		text-align: center;
+		font-weight: 300;
+	}
+	.contact{
+		margin-bottom: $marL;
+		padding-bottom: $marL;
+	}
+	.hours{
+		padding-bottom: $marM;
+	}
+	.copyright {
+		font-size: .7em;
+		padding-bottom: $marS;
+	}
+}
