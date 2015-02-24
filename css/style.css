@@ -387,12 +387,47 @@ p {
     text-shadow: 1px 1px 1px #fff;
     margin-top: 0;
     padding-top: 70px; }
+  .findBeer h3 {
+    color: #932a28; }
   .findBeer form {
     font-family: "Open Sans", sans-serif;
     font-size: 1.25em;
     margin-bottom: 50px; }
     .findBeer form h3 {
       font-size: 1.2em; }
+    .findBeer form input[type=text] {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      height: 1.5em;
+      color: #fff;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      font-size: 1em; }
+    .findBeer form #zip {
+      width: 100px; }
+    .findBeer form span.big {
+      display: block;
+      font-size: 2em;
+      margin-bottom: -15px; }
+    .findBeer form #city {
+      width: 200px; }
+    .findBeer form #state {
+      width: 45px;
+      margin-bottom: 30px; }
+    .findBeer form ::-webkit-input-placeholder {
+      color: #ddd; }
+    .findBeer form :-moz-placeholder {
+      /* Firefox 18- */
+      color: #fff; }
+    .findBeer form ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #fff; }
+    .findBeer form :-ms-input-placeholder {
+      color: #fff; }
+    .findBeer form input[type=submit] {
+      background: none;
+      max-width: 400px; }
   .findBeer img {
     max-width: 100%; }
   .findBeer .carrier, .findBeer .carrierL {
@@ -405,8 +440,8 @@ p {
   .findBeer .carrierL {
     margin-right: 5%; }
   .findBeer .buttonD {
-    clear: left;
-    display: inline-block;
-    width: 100%; }
+    float: left;
+    width: 100%;
+    margin-bottom: 70px; }
 
 /*# sourceMappingURL=style.css.map */

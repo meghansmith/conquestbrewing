@@ -10,6 +10,9 @@
 		margin-top: 0;
 		padding-top: $marL;
 	}
+	h3{
+		color: $red;
+	}
 	form{
 		
 		font-family: $font2;
@@ -17,6 +20,51 @@
 		margin-bottom: $marM;
 		h3{
 			font-size: 1.2em;
+		}
+		input[type=text] {
+			background-color: rgba(0, 0, 0, .5);
+			border: none;
+			height: 1.5em;
+			color: #fff;
+			margin-left: 10px;
+			margin-bottom: 10px;
+			padding-left: 10px;
+			font-size: 1em;
+
+		}
+		#zip{
+			width: 100px;
+		}
+		span.big{
+			display: block;
+			font-size: 2em;
+			margin-bottom: -15px;
+		}
+		#city {
+			width: 200px;
+		}
+		#state {
+			width: 45px;
+			margin-bottom: $marS;
+		}
+		::-webkit-input-placeholder {
+		   color: #ddd;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: #fff;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color:#fff;  
+		}
+
+		:-ms-input-placeholder {  
+		   color: #fff;  
+		}
+		input[type=submit]{
+			background: none;
+			max-width: 400px;
 		}
 	}
 	img{
@@ -36,8 +84,8 @@
 		margin-right: 5%;
 	}
 	.buttonD{
-		clear: left;
-		display: inline-block;
+		float: left;
 		width: 100%;
+		margin-bottom: $marL;
 	}
 }
