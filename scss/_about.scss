@@ -1,0 +1,54 @@
+.about {
+	background-image: url("../images/pullDark.jpg");
+	background-size: cover;
+	background-position: right;
+	padding-top: $marL;
+	padding-bottom: $marL;
+	h2 {
+		color: $gold;
+	}
+
+	p{
+		color: #fff;
+		font-weight: 300;
+		margin-bottom: $marL;
+	}
+	.quote1 {
+		background-color: rgba(255,255,255,.2);
+		width: 80%;
+		margin: 0 auto;
+		padding: 10px;
+		line-height: 1.6em;
+		margin-bottom: $marL;
+	}
+	.bolder{
+		font-weight: 700;
+	}
+	.attribution{
+		font-size: .8em;
+	}
+	.bigBold{
+		font-weight: 400;
+		font-size: 1.25em;
+	}
+	.beerQuote {
+		background-image: url(../images/shield.png);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		font-size: 2em;
+		color: $gold;
+		font-family: $font1;
+		text-transform: uppercase;
+		text-align: center;
+		padding-top: $marS;
+		padding-bottom: $marL;
+		.huge{
+			font-size: 2em;
+			color: $red;
+		}
+		.red{
+			color: $red;
+		}
+	}
+}

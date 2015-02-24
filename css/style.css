@@ -381,14 +381,17 @@ p {
   background-image: url(../images/growlersLight.jpg);
   background-size: cover;
   background-position: top;
-  margin-top: -20px; }
+  margin-top: -20px;
+  padding-bottom: 20px; }
   .findBeer h2 {
     color: #932a28;
     text-shadow: 1px 1px 1px #fff;
     margin-top: 0;
     padding-top: 70px; }
   .findBeer h3 {
-    color: #932a28; }
+    color: #932a28;
+    margin-top: 0;
+    padding-top: 0; }
   .findBeer form {
     font-family: "Open Sans", sans-serif;
     font-size: 1.25em;
@@ -443,5 +446,49 @@ p {
     float: left;
     width: 100%;
     margin-bottom: 70px; }
+
+.about {
+  background-image: url("../images/pullDark.jpg");
+  background-size: cover;
+  background-position: right;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+  .about h2 {
+    color: #aea468; }
+  .about p {
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 70px; }
+  .about .quote1 {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 1.6em;
+    margin-bottom: 70px; }
+  .about .bolder {
+    font-weight: 700; }
+  .about .attribution {
+    font-size: .8em; }
+  .about .bigBold {
+    font-weight: 400;
+    font-size: 1.25em; }
+  .about .beerQuote {
+    background-image: url(../images/shield.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 2em;
+    color: #aea468;
+    font-family: "Nixie One", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 70px; }
+    .about .beerQuote .huge {
+      font-size: 2em;
+      color: #932a28; }
+    .about .beerQuote .red {
+      color: #932a28; }
 
 /*# sourceMappingURL=style.css.map */
