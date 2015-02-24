@@ -100,7 +100,7 @@ textarea {
 body {
     margin: 0;
 }
-h1, h2, h3, h4, h5, a{
+h1, h2, h3, h4, h5{
     font-family: $font1;
     text-align: center;
 }
@@ -111,6 +111,9 @@ h2{
 h3{
     font-size: 1.6em;
     text-transform: uppercase;
+}
+a{
+    font-family: $font2;
 }
 p{
     font-family: $font2;
@@ -138,6 +141,8 @@ p{
     padding: 0 10px;
 }
 %button {
+    font-family: $font1;
+    text-align: center;
     display: inline-block;
     text-decoration: none;
     font-size: 1.25em;

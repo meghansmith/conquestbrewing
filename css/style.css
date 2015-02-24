@@ -84,7 +84,7 @@ textarea {
 body {
   margin: 0; }
 
-h1, h2, h3, h4, h5, a {
+h1, h2, h3, h4, h5 {
   font-family: "Nixie One", sans-serif;
   text-align: center; }
 
@@ -95,6 +95,9 @@ h2 {
 h3 {
   font-size: 1.6em;
   text-transform: uppercase; }
+
+a {
+  font-family: "Open Sans", sans-serif; }
 
 p {
   font-family: "Open Sans", sans-serif;
@@ -119,6 +122,8 @@ p {
   padding: 0 10px; }
 
 .buttonL, .buttonD {
+  font-family: "Nixie One", sans-serif;
+  text-align: center;
   display: inline-block;
   text-decoration: none;
   font-size: 1.25em;
@@ -371,5 +376,37 @@ p {
   .tasting a {
     color: #fff;
     font-size: 1.1em; }
+
+.findBeer {
+  background-image: url(../images/growlersLight.jpg);
+  background-size: cover;
+  background-position: top;
+  margin-top: -20px; }
+  .findBeer h2 {
+    color: #932a28;
+    text-shadow: 1px 1px 1px #fff;
+    margin-top: 0;
+    padding-top: 70px; }
+  .findBeer form {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25em;
+    margin-bottom: 50px; }
+    .findBeer form h3 {
+      font-size: 1.2em; }
+  .findBeer img {
+    max-width: 100%; }
+  .findBeer .carrier, .findBeer .carrierL {
+    float: left;
+    width: 47%;
+    margin-bottom: 30px; }
+    .findBeer .carrier a, .findBeer .carrierL a {
+      font-size: .8em;
+      color: #333; }
+  .findBeer .carrierL {
+    margin-right: 5%; }
+  .findBeer .buttonD {
+    clear: left;
+    display: inline-block;
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

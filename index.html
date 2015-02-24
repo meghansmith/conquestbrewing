@@ -38,8 +38,8 @@
                     <h2><span>Conquest</span><br>Brewing Company</h2>
                     <h3>History is written<br>by the victors.<br><span>Join us</span></h3>
                            </div>
-            </div>
-        </div>
+            </div><!-- end of wrapper -->
+        </div><!-- end of dark background -->
     </header>
     <main class="home">
         <section class="brews" id="brews">
@@ -77,7 +77,7 @@
                             <li><a href="#">The Finisher</a></li>
                         </ul></li>
                 </ul>
-            </div>
+            </div> <!-- end of wrapper -->
         </section>  <!-- end brews -->
         <section class="tasting" id="tasting">
             <div class="darkBackground">
@@ -111,38 +111,40 @@
                             <li><a href="#">Grapefruit &amp; Elderflower Soda</a></li>
                         </div>
                     </ul>
-                </div>
+                </div>  <!-- end of wrapper -->
             </div> <!-- end dark background -->
         </section>  <!-- end tasting -->
-        <section class="findBeer" id="findBeer">
-            <h2>Find Our Beer</h2>
-            <form action="#">
-                <legend>By Location:</legend>
-                <label for="zip">Enter your ZIP code:</label>
-                <input type="text" name="zip" id="zip"> <br>
-                <label for="city"><span class="big">OR</span> your City, ST:</label>
-                <input type="text" name="city" id="city">
-                <input type="text" name="state" id="state">
-                <input type="submit" value="Find it" class="buttonD">
-            </form>
-            <div class="carrier">
-                <a href="#"><img src="images/greenslogo.jpg" alt="logo for Green's Discount Beverages"></a>
-                <p><a href="#">400 Assembly St <br>Columbia, SC 29201</a></p>
-                <p><a href="#">4012 Fernandina Rd <br>Columbia, SC 29212</a></p>
-            </div>
-            <div class="carrier">
-                <a href="#"><img src="images/ruthchris.png" alt="logo for Ruth Chris"></a>
-                <p><a href="#">924-A Senate St <br>Columbia, SC 29201</a></p>
-            </div>
-            <div class="carrier">
-                <a href="#"><img src="images/flyingsaucer.jpg" alt="logo for Flying Saucer"></a>
-                <p><a href="#">931 Senate St <br>Columbia, SC 29201</a></p>
-            </div>
-            <div class="carrier">
-                <a href="#"><img src="images/buffaloww.jpg" alt="logo for Buffalo Wild Wings"></a>
-                <p><a href="#">3 Locations in <br>Columbia, SC</a></p>
-            </div>
-            <a href="#" class="buttonD">View All Locations</a>
+        <section class="findBeer clearfix" id="findBeer">
+            <div class="wrapper">
+                <h2>Find Our Beer</h2>
+                <form action="#">
+                    <legend><h3>Enter your Location:</h3></legend>
+                    <label for="zip">ZIP code:</label>
+                    <input type="text" name="zip" id="zip"> <br>
+                    <label for="city"><span class="big">OR</span> City, ST:</label>
+                    <input type="text" name="city" id="city">
+                    <input type="text" name="state" id="state">
+                    <input type="submit" value="Find it" class="buttonD">
+                </form>
+                <div class="carrierL">
+                    <a href="#"><img src="images/greenslogo.jpg" alt="logo for Green's Discount Beverages"></a>
+                    <p><a href="#">2 locations in<br>Columbia, SC</a></p>
+                </div>
+                <div class="carrier">
+                    <a href="#"><img src="images/flyingsaucer.jpg" alt="logo for Flying Saucer"></a>
+                    <p><a href="#">931 Senate St <br>Columbia, SC 29201</a></p>
+                </div>
+                <div class="carrierL">
+                    <a href="#"><img src="images/buffaloww.jpg" alt="logo for Buffalo Wild Wings"></a>
+                    <p><a href="#">3 Locations in <br>Columbia, SC</a></p>
+                </div>
+                <div class="carrier">
+                    <a href="#"><img src="images/ruthchris.png" alt="logo for Ruth Chris"></a>
+                    <p><a href="#">924-A Senate St <br>Columbia, SC 29201</a></p>
+                </div>
+                
+                <a href="#" class="buttonD">View All Locations</a>
+            </div><!-- end of wrapper -->
         </section> <!-- end of find our beer section -->
         <section class="about" id="about">
             <h2>About Us</h2>

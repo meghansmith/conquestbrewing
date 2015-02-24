@@ -1,0 +1,43 @@
+.findBeer {
+	background-image: url(../images/growlersLight.jpg);
+	background-size: cover;
+	background-position: top;
+	margin-top: -20px;
+	
+	h2{
+		color: $red;
+		text-shadow: 1px 1px 1px #fff;
+		margin-top: 0;
+		padding-top: $marL;
+	}
+	form{
+		
+		font-family: $font2;
+		font-size: 1.25em;
+		margin-bottom: $marM;
+		h3{
+			font-size: 1.2em;
+		}
+	}
+	img{
+		max-width: 100%;
+	}
+	.carrier{
+		float: left;
+		width: 47%;
+		margin-bottom: $marS;
+		a {
+			font-size: .8em;
+			color: #333;
+		}
+	}
+	.carrierL {
+		@extend .carrier;
+		margin-right: 5%;
+	}
+	.buttonD{
+		clear: left;
+		display: inline-block;
+		width: 100%;
+	}
+}
