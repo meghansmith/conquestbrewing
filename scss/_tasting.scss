@@ -1,0 +1,46 @@
+.tasting {
+	background: url("../images/flightLD.jpg") no-repeat;
+	background-size: cover;
+	background-position: right;
+
+	.darkBackground {
+		background-color: rgba(0, 0, 0, .7);
+		padding-top: $marL;
+	}
+	h2{
+		color: $gold;
+	}
+	p{
+		color: #fff;
+		font-weight: 300;
+	}
+	p.bottom{
+		margin-bottom: $marM;
+	}
+	.social{
+		margin-bottom: $marM;
+	}
+	h3{
+		color: $gold;
+	}
+	ul{
+		list-style: none;
+		padding: 0 0 $marL;
+	}
+	.list1{
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+	}
+	.list2{
+		display: inline-block;
+		width: 49%;
+	}
+	li{
+		padding-bottom: 1em;
+	}
+	a{
+		color: #fff;
+		font-size: 1.1em;
+	}
+}

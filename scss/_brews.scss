@@ -1,0 +1,36 @@
+.brews {
+	background-image: url(../images/brewsFlight.jpg);
+	background-size: cover;
+	background-position: 0px 1087px;
+	padding-top: $marL;
+
+	h2{
+		color: $red;
+		margin-top: 0;
+		margin-bottom: 460px;
+		text-shadow: 1px 1px 1px #fff;
+	}
+	h3{
+		color: $red;
+		text-shadow: 1px 1px 1px #fff;
+	}
+	p{
+		margin-bottom: $marM;
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+		margin-bottom: $marL;
+	}
+	ul>li>ul {
+		display: none;
+	}
+	a.buttonD{
+		display: inline-block;
+		width: 100%;
+		border-top: none;
+	}
+	li:first-child a.buttonD {
+		border-top: 1px solid #333;
+	}
+}

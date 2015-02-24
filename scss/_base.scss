@@ -102,14 +102,24 @@ body {
 }
 h1, h2, h3, h4, h5, a{
     font-family: $font1;
+    text-align: center;
+}
+h2{
+    font-size: 2.6em;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 1.6em;
+    text-transform: uppercase;
 }
 p{
     font-family: $font2;
+    font-size: 1.2em;
 }
 .logoReplace a {
     display: block;
-    width: 120px;
-    height: 90px;
+    width: 130px;
+    height: 100px;
     background-size: contain;
     background-image: url("../images/logoclear.png");
     text-indent: -9999px;
@@ -120,13 +130,6 @@ p{
 .imageReplace1{
 
 }
-.darkBackground{
-
-}
-.lightBackground{
-
-}
-
 .intro{
     font-weight: bold;
 }
@@ -134,12 +137,21 @@ p{
     width: 100%;
     padding: 0 10px;
 }
-.button {
+%button {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
+    font-size: 1.25em;
     padding: 5px;
+}
+.buttonL {    
+    @extend %button;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.buttonD{
+    @extend %button;
+    border: 1px solid #333;
+    color: #333;
 }
 
 
