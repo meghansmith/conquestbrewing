@@ -6,6 +6,7 @@
 	.darkBackground {
 		background-color: rgba(0, 0, 0, .7);
 		padding-top: $marL;
+		margin-top: -16px;
 	}
 	h2{
 		color: $gold;
@@ -29,12 +30,14 @@
 	}
 	.list1{
 		display: inline-block;
-		width: 49%;
+		width: 48.5%;
 		vertical-align: top;
+		margin-right: 1.5%;
 	}
 	.list2{
 		display: inline-block;
-		width: 49%;
+		width: 48.5%;
+
 	}
 	li{
 		padding-bottom: 1em;
@@ -42,5 +45,25 @@
 	a{
 		color: #fff;
 		font-size: 1.1em;
+	}
+	.hours{
+		@include bp($small){
+			display: inline-block;
+			width: 50%;
+			margin-right: 3%;
+			vertical-align: top;
+			h3{
+				text-align: left;
+			}
+		}
+	}
+	.onTap{
+		@include bp($small){
+			display: inline-block;
+			width: 46%;
+			h3{
+				text-align: left;
+			}
+		}
 	}
 }

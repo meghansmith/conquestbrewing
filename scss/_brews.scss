@@ -1,36 +1,92 @@
 .brews {
-	background-image: url(../images/brewsFlight.jpg);
+	background-image: url(../images/brewsFlight4.jpg);
 	background-size: cover;
-	background-position: 0px 1087px;
+	background-position: center;
 	padding-top: $marL;
+	
+	@include bp($small){
+		background-position: left top -200px;
+		padding-top: $marXL;
+	}
 
 	h2{
 		color: $red;
 		margin-top: 0;
-		margin-bottom: 460px;
-		text-shadow: 1px 1px 1px #fff;
+		margin-bottom:  520px;
+		text-shadow: 0px 0px 3px #fff;
+
+
+		@include bp($small){
+			margin-bottom: $marM;
+		}
 	}
 	h3{
 		color: $red;
-		text-shadow: 1px 1px 1px #fff;
+		text-shadow: 0px 0px 3px #fff;
+
+		@include bp($small){
+			display: none;
+		}
 	}
 	p{
 		margin-bottom: $marM;
+		@include bp($small){
+			width: 65%;
+			float: right;
+			margin-left: 20px;
+		}
+	}
+	ul.beerList{
+		@include bp($small){
+			background-color: rgba(255,255,255, .5);
+			padding-left: 15px;
+			padding-bottom: 0;
+		}
 	}
 	ul{
 		list-style: none;
 		padding: 0;
-		margin-bottom: $marL;
+		padding-bottom: $marL;
+
+		@include bp($small){
+			width: 30%;
+			float: right;
+			text-align: left;
+			padding-bottom: 20px;
+		}
 	}
 	ul>li>ul {
 		display: none;
+
+		@include bp($small){
+			display: block;
+			width: 100%;
+
+		}
+		li{
+			padding-bottom: 5px;
+		}
+		a{
+			color: #333;
+			text-shadow: 0 0 3px #fff;
+		}
 	}
 	a.buttonD{
 		display: inline-block;
 		width: 100%;
 		border-top: none;
+
+		@include bp($small){
+			border: none;
+			padding: 0 0 10px 0;
+			text-align: left;
+			text-decoration: underline;
+		}
 	}
 	li:first-child a.buttonD {
 		border-top: 1px solid #333;
+		@include bp($small){
+			border:none;
+		}
 	}
 }

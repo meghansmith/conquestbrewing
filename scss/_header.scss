@@ -2,8 +2,12 @@
 	background: url("../images/tapsLD.jpg") no-repeat;
 	background-size: cover;
 	
+	
 	.darkBackground {
-		background-color: rgba(0, 0, 0, .5)
+		background-color: rgba(0, 0, 0, .5);
+			@include bp($small){
+			padding-bottom: $marL;
+		}
 	}
 	h1 {
 		display: inline-block;
@@ -13,6 +17,9 @@
 		display: inline-block;
 		width: 59%;
 		margin-bottom: $marM;
+		@include bp($small){
+			margin-bottom: $marXL;
+		}
 	}
 	ul{
 		padding: 0;
@@ -26,6 +33,13 @@
 		display: inline-block;
 		width: 100%;
 		border-top: none;
+
+		@include bp($small){
+			width: 47%;
+			margin-bottom: 10px;
+			margin-right: 6px;
+			border-top: 1px solid #fff;
+		}
 	}
 	li:first-child a.buttonL {
 		border-top: 1px solid #fff;
@@ -44,7 +58,7 @@
 	h3{
 		color: $red;
 		text-align: center;
-		text-shadow: 1px 1px 1px #000;
+		text-shadow: 0px 0px 3px #000;
 		padding-bottom: $marL;
 		font-size: 2.05em;
 		margin: 0;
