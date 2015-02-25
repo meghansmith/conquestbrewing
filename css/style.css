@@ -436,12 +436,12 @@ p {
     padding: 0 0 70px; }
   .tasting .list1 {
     display: inline-block;
-    width: 48.5%;
+    width: 48%;
     vertical-align: top;
     margin-right: 1.5%; }
   .tasting .list2 {
     display: inline-block;
-    width: 48.5%; }
+    width: 48%; }
   .tasting li {
     padding-bottom: 1em; }
   .tasting a {
@@ -476,7 +476,8 @@ p {
   .findBeer h3 {
     color: #932a28;
     margin-top: 0;
-    padding-top: 0; }
+    padding-top: 0;
+    clear: both; }
   .findBeer form {
     font-family: "Open Sans", sans-serif;
     font-size: 1.25em;
@@ -497,7 +498,15 @@ p {
     .findBeer form span.big {
       display: block;
       font-size: 2em;
-      margin-bottom: -15px; }
+      margin-bottom: 6px; }
+      @media (min-width: 600px) {
+        .findBeer form span.big {
+          display: inline;
+          padding-right: 11px; } }
+      @media (min-width: 665px) {
+        .findBeer form span.big {
+          padding-left: 6px;
+          padding-right: 10px; } }
     .findBeer form #city {
       width: 200px; }
     .findBeer form #state {
@@ -517,6 +526,9 @@ p {
       background: none;
       max-width: 400px;
       text-shadow: 0px 0px 3px #fff; }
+    @media (min-width: 665px) {
+      .findBeer form br {
+        display: none; } }
   .findBeer img {
     max-width: 100%; }
   .findBeer .carrier, .findBeer .carrierL {
@@ -532,6 +544,10 @@ p {
     float: left;
     width: 100%;
     margin-bottom: 70px; }
+    @media (min-width: 600px) {
+      .findBeer .buttonD {
+        width: 225px;
+        clear: left; } }
 
 .about {
   background-image: url("../images/pullDark.jpg");
@@ -545,8 +561,19 @@ p {
     color: #fff;
     font-weight: 300;
     margin-bottom: 70px; }
+    @media (min-width: 600px) {
+      .about p {
+        width: 60%;
+        display: inline-block;
+        vertical-align: top; } }
   .about .quote1 {
     background-color: rgba(255, 255, 255, 0.2); }
+    @media (min-width: 600px) {
+      .about .quote1 {
+        width: 34%;
+        display: inline-block;
+        margin-left: 5%;
+        margin-top: 23px; } }
   .about .bolder {
     font-weight: 700; }
   .about .attribution {
@@ -567,6 +594,23 @@ p {
     padding-top: 30px;
     padding-bottom: 70px;
     text-shadow: 0px 0px 3px #333; }
+    @media (min-width: 600px) {
+      .about .beerQuote {
+        margin-top: -600px;
+        background-size: 100% 100%; } }
+    @media (min-width: 670px) {
+      .about .beerQuote {
+        margin-top: -550px; } }
+    @media (min-width: 700px) {
+      .about .beerQuote {
+        margin-top: -500px;
+        background-size: contain; } }
+    @media (min-width: 723px) {
+      .about .beerQuote {
+        margin-top: -475px; } }
+    @media (min-width: 788px) {
+      .about .beerQuote {
+        margin-top: -375px; } }
     .about .beerQuote .huge {
       font-size: 2em;
       color: #932a28; }
@@ -581,9 +625,13 @@ p {
     background-position: right; }
     .team .lightTaps img {
       width: 50%;
-      max-width: 100%;
+      max-width: 200px;
       float: right;
       padding: 5px 0 10px 20px; }
+      @media (min-width: 600px) {
+        .team .lightTaps img {
+          float: left;
+          padding: 5px 20px 10px 0; } }
     .team .lightTaps .lightBackground {
       background-color: rgba(255, 255, 255, 0.7);
       padding-top: 70px; }
@@ -604,18 +652,40 @@ p {
       font-size: 1.25em; }
     .team .quote2 .attribution, .team .quote3 .attribution {
       font-size: .7em; }
+  @media (min-width: 600px) {
+    .team .quote2 {
+      width: 30%;
+      float: right;
+      margin-left: 5%; } }
+  @media (min-width: 600px) {
+    .team .quote3 {
+      width: 60%;
+      float: left; } }
   .team .lightFlight {
     background-image: url(../images/flightLD.jpg);
     background-size: cover;
-    background-position: 400px;
+    background-position: -200px;
     margin-top: -20px; }
+    @media (min-width: 680px) {
+      .team .lightFlight {
+        background-position: center; } }
     .team .lightFlight .lightBackground {
       background-color: rgba(255, 255, 255, 0.6); }
     .team .lightFlight img {
       width: 50%;
-      max-width: 100%;
+      max-width: 200px;
       float: left;
       padding: 5px 20px 10px 0px; }
+      @media (min-width: 600px) {
+        .team .lightFlight img {
+          clear: left;
+          margin-top: 30px; } }
+    @media (min-width: 600px) {
+      .team .lightFlight p {
+        margin-top: 50px; } }
+    @media (min-width: 840px) {
+      .team .lightFlight p {
+        margin-top: 70px; } }
 
 .mainFooter {
   background-image: url(../images/map.jpg);
@@ -630,10 +700,23 @@ p {
   .mainFooter .contact {
     margin-bottom: 70px;
     padding-bottom: 70px; }
+    @media (min-width: 700px) {
+      .mainFooter .contact {
+        width: 33%;
+        float: left;
+        padding-bottom: 0; } }
   .mainFooter .hours {
     padding-bottom: 50px; }
+    @media (min-width: 700px) {
+      .mainFooter .hours {
+        width: 33%;
+        float: right;
+        padding-bottom: 0; } }
   .mainFooter .copyright {
     font-size: .7em;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    clear: both; }
+  .mainFooter a {
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

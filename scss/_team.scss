@@ -7,9 +7,14 @@
 
 		img {
 			width: 50%;
-			max-width: 100%;
+			max-width: 200px;
 			float: right;
 			padding: 5px 0 10px 20px;
+
+			@include bp($small){
+				float: left;
+				padding: 5px 20px 10px 0;
+			}
 		}
 		.lightBackground{
 			background-color: rgba(255,255,255, .7);
@@ -43,19 +48,48 @@
 			font-size: .7em;
 		}
 	}
+	.quote2 {
+		@include bp($small){
+			width: 30%;
+			float: right;
+			margin-left: 5%;
+		}
+	}
+	.quote3{
+		@include bp($small){
+			width: 60%;
+			float: left;
+		}
+	}
 	.lightFlight{
 		background-image: url(../images/flightLD.jpg);
 		background-size: cover;
-		background-position: 400px;
+		background-position: -200px;
 		margin-top: -20px;
+		@include bp(680px){
+			background-position: center;
+		}
 		.lightBackground{
 			background-color: rgba(255,255,255, .6);
 		}
 		img {
 			width: 50%;
-			max-width: 100%;
+			max-width: 200px;
 			float: left;
 			padding: 5px 20px 10px 0px;
+			@include bp($small){
+				clear: left;
+				margin-top: 30px;
+			}
+		}
+		p{
+			@include bp($small){
+				margin-top: 50px;
+			}
+			@include bp(840px){
+				margin-top: 70px;
+			}
 		}
 	}
+
 }

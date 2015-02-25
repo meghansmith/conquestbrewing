@@ -12,12 +12,27 @@
 	.contact{
 		margin-bottom: $marL;
 		padding-bottom: $marL;
+
+		@include bp(700px){
+			width: 33%;
+			float: left;
+			padding-bottom: 0;
+		}
 	}
 	.hours{
 		padding-bottom: $marM;
+		@include bp(700px){
+			width: 33%;
+			float: right;
+			padding-bottom: 0;
+		}
 	}
 	.copyright {
 		font-size: .7em;
 		padding-bottom: $marS;
+		clear: both;
+	}
+	a{
+		color: #fff;
 	}
 }
