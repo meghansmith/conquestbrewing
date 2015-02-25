@@ -12,6 +12,12 @@
 	h1 {
 		display: inline-block;
 		width: 37%;
+		@include bp($med){
+			width: 16%;
+		}
+		@include bp(840px){
+			width: 20%;
+		}
 	}
 	nav {
 		display: inline-block;
@@ -19,6 +25,14 @@
 		margin-bottom: $marM;
 		@include bp($small){
 			margin-bottom: $marXL;
+		}
+		@include bp($med){
+			width: 83%;
+			margin-top: 30px;
+
+		}
+		@include bp(840px){
+			width: 79%;
 		}
 	}
 	ul{
@@ -39,6 +53,10 @@
 			margin-bottom: 10px;
 			margin-right: 6px;
 			border-top: 1px solid #fff;
+		}
+		@include bp($med){
+			width: 24.5%;
+			margin-right: 0px;
 		}
 	}
 	li:first-child a.buttonL {

@@ -82,7 +82,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #333; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Nixie One", sans-serif;
@@ -132,7 +133,14 @@ p {
 
 .wrapper {
   width: 100%;
-  padding: 0 20px; }
+  padding: 0 20px;
+  max-width: 850px;
+  margin: 0 auto; }
+
+.imageWrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0; }
 
 .buttonL, .buttonD {
   font-family: "Nixie One", sans-serif;
@@ -296,6 +304,12 @@ p {
   .mainHeader h1 {
     display: inline-block;
     width: 37%; }
+    @media (min-width: 800px) {
+      .mainHeader h1 {
+        width: 16%; } }
+    @media (min-width: 840px) {
+      .mainHeader h1 {
+        width: 20%; } }
   .mainHeader nav {
     display: inline-block;
     width: 59%;
@@ -303,6 +317,13 @@ p {
     @media (min-width: 600px) {
       .mainHeader nav {
         margin-bottom: 100px; } }
+    @media (min-width: 800px) {
+      .mainHeader nav {
+        width: 83%;
+        margin-top: 30px; } }
+    @media (min-width: 840px) {
+      .mainHeader nav {
+        width: 79%; } }
   .mainHeader ul {
     padding: 0;
     list-style: none; }
@@ -318,6 +339,10 @@ p {
         margin-bottom: 10px;
         margin-right: 6px;
         border-top: 1px solid #fff; } }
+    @media (min-width: 800px) {
+      .mainHeader a.buttonL {
+        width: 24.5%;
+        margin-right: 0px; } }
   .mainHeader li:first-child a.buttonL {
     border-top: 1px solid #fff; }
   .mainHeader h2 {
@@ -347,8 +372,17 @@ p {
   padding-top: 70px; }
   @media (min-width: 600px) {
     .brews {
-      background-position: left top -200px;
+      background-position: left top -285px;
       padding-top: 100px; } }
+  @media (min-width: 680px) {
+    .brews {
+      background-position: left top -385px; } }
+  @media (min-width: 750px) {
+    .brews {
+      background-position: left top -450px; } }
+  @media (min-width: 800px) {
+    .brews {
+      background-position: left top -550px; } }
   .brews h2 {
     color: #932a28;
     margin-top: 0;
@@ -535,6 +569,10 @@ p {
     float: left;
     width: 47%;
     margin-bottom: 30px; }
+    @media (min-width: 800px) {
+      .findBeer .carrier, .findBeer .carrierL {
+        width: 20%;
+        margin-right: 5%; } }
     .findBeer .carrier a, .findBeer .carrierL a {
       font-size: .8em;
       color: #333; }
@@ -611,6 +649,9 @@ p {
     @media (min-width: 788px) {
       .about .beerQuote {
         margin-top: -375px; } }
+    @media (min-width: 800px) {
+      .about .beerQuote {
+        text-shadow: 0 0 10px #000; } }
     .about .beerQuote .huge {
       font-size: 2em;
       color: #932a28; }
@@ -661,6 +702,9 @@ p {
     .team .quote3 {
       width: 60%;
       float: left; } }
+  @media (min-width: 800px) {
+    .team .quote3 {
+      width: 100%; } }
   .team .lightFlight {
     background-image: url(../images/flightLD.jpg);
     background-size: cover;
@@ -681,10 +725,12 @@ p {
           clear: left;
           margin-top: 30px; } }
     @media (min-width: 600px) {
-      .team .lightFlight p {
+      .team .lightFlight p.ellisor {
         margin-top: 50px; } }
-    @media (min-width: 840px) {
-      .team .lightFlight p {
+    @media (min-width: 800px) {
+      .team .lightFlight p.ellisor {
+        display: inline-block;
+        width: 38%;
         margin-top: 70px; } }
 
 .mainFooter {

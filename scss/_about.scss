@@ -71,6 +71,9 @@
 		@include bp(788px){
 			margin-top: -375px;
 		}
+		@include bp($med){
+			text-shadow: 0 0 10px #000;
+		}
 		.huge{
 			font-size: 2em;
 			color: $red;

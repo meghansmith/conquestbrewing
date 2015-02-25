@@ -92,6 +92,10 @@
 		float: left;
 		width: 47%;
 		margin-bottom: $marS;
+		@include bp($med){
+			width: 20%;
+			margin-right: 5%;
+		}
 		a {
 			font-size: .8em;
 			color: #333;

@@ -60,6 +60,9 @@
 			width: 60%;
 			float: left;
 		}
+		@include bp($med){
+			width: 100%;
+		}
 	}
 	.lightFlight{
 		background-image: url(../images/flightLD.jpg);
@@ -82,11 +85,13 @@
 				margin-top: 30px;
 			}
 		}
-		p{
+		p.ellisor{
 			@include bp($small){
 				margin-top: 50px;
 			}
-			@include bp(840px){
+			@include bp ($med){
+				display: inline-block;
+				width: 38%;
 				margin-top: 70px;
 			}
 		}

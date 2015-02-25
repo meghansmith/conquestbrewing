@@ -5,8 +5,17 @@
 	padding-top: $marL;
 	
 	@include bp($small){
-		background-position: left top -200px;
+		background-position: left top -285px;
 		padding-top: $marXL;
+	}
+	@include bp(680px){
+		background-position: left top -385px;
+	}
+	@include bp(750px){
+		background-position: left top -450px;
+	}
+	@include bp($med){
+		background-position: left top -550px;
 	}
 
 	h2{
