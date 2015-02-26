@@ -433,12 +433,6 @@ p {
     text-transform: none; }
     .mainHeader h3 span {
       color: #aea468; }
-  .mainHeader p {
-    color: #aea468;
-    font-size: 1.25em;
-    font-family: "Nixie One", sans-serif;
-    text-align: center;
-    padding-bottom: 15px; }
 
 .test {
   -webkit-animation: fadein 2s;
@@ -888,6 +882,9 @@ p {
     font-style: .9em;
     text-align: center;
     font-weight: 300; }
+    @media (min-width: 700px) {
+      .mainFooter p {
+        text-align: left; } }
   .mainFooter .contact {
     margin-bottom: 70px;
     padding-bottom: 70px; }
@@ -916,5 +913,103 @@ p {
     text-align: center;
     display: inline-block;
     margin-top: 10px; }
+  .mainFooter span.bigger {
+    font-size: 1.1em; }
+
+.brewsHeader p {
+  font-size: 1.5em;
+  padding-bottom: 40px;
+  color: #aea468;
+  font-family: "Nixie One", sans-serif;
+  text-align: center; }
+
+.brewsPage {
+  background-image: url(../images/growlerLight2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: -25px; }
+  .brewsPage .wrapper {
+    background-color: rgba(255, 255, 255, 0.95); }
+  .brewsPage h2, .brewsPage h3, .brewsPage h4 {
+    color: #932a28;
+    text-shadow: 0 0 5px #fff; }
+  .brewsPage h2 {
+    margin-top: 70px; }
+  .brewsPage h3 {
+    clear: left; }
+    .brewsPage h3.clear {
+      clear: both;
+      padding-top: 50px; }
+  .brewsPage h4 {
+    margin-top: 70px;
+    font-size: 1.5em;
+    clear: left;
+    text-align: left; }
+    .brewsPage h4.clear {
+      clear: both; }
+  .brewsPage .buttonD {
+    width: 100%; }
+    @media (min-width: 800px) {
+      .brewsPage .buttonD:hover {
+        background-color: transparent;
+        color: #888; } }
+  @media (min-width: 600px) {
+    .brewsPage ul.beerList {
+      padding-left: 15px;
+      padding-bottom: 0; } }
+  .brewsPage ul {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 30px;
+    margin-bottom: 0; }
+    @media (min-width: 600px) {
+      .brewsPage ul {
+        width: 30%;
+        float: right;
+        text-align: left;
+        padding-bottom: 20px; } }
+  .brewsPage ul > li > ul {
+    display: none; }
+    @media (min-width: 600px) {
+      .brewsPage ul > li > ul {
+        display: block;
+        width: 100%; } }
+    .brewsPage ul > li > ul li {
+      padding-bottom: 5px; }
+    .brewsPage ul > li > ul a {
+      color: #333;
+      text-shadow: 0 0 3px #fff;
+      transition: color .3s; }
+    @media (min-width: 800px) {
+      .brewsPage ul > li > ul a:hover {
+        color: #888; } }
+  .brewsPage img {
+    float: left; }
+  .brewsPage img.right {
+    float: right; }
+  .brewsPage p.numbers {
+    margin-top: 30px; }
+  .brewsPage ul.beerDetail {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    margin-top: -10px;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+    @media (min-width: 600px) {
+      .brewsPage ul.beerDetail {
+        float: none;
+        width: 100%; } }
+  .brewsPage a.top {
+    color: #333;
+    display: inline-block;
+    margin-top: 50px;
+    transition: color, 2s; }
+    @media (min-width: 800px) {
+      .brewsPage a.top:hover {
+        color: #888; } }
+  @media (min-width: 600px) {
+    .brewsPage .buttonD {
+      border: none;
+      text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */

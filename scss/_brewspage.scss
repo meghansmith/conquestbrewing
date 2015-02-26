@@ -1,0 +1,136 @@
+.brewsHeader{
+	p{
+		font-size: 1.5em;
+		padding-bottom: 40px;
+		color: $gold;
+		font-family: $font1;
+		text-align: center;
+	}
+}
+.brewsPage {
+	background-image: url(../images/growlerLight2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	margin-top: -25px;
+	.wrapper{
+		background-color: rgba(255,255,255,.95);
+	}
+
+	h2, h3, h4{
+		color: $red;
+		text-shadow: 0 0 5px #fff;
+	}
+	h2{
+		margin-top: $marL;
+	}
+	h3{
+		clear: left;
+		&.clear{
+			clear: both;
+			padding-top: $marM;
+		}
+	}
+
+	h4{
+		margin-top: $marL;
+		font-size: 1.5em;
+		clear: left;
+		text-align: left;
+		&.clear{
+			clear: both;
+		}
+	}
+	.buttonD{
+		width: 100%;
+
+		@include bp($med){
+			&:hover{
+				background-color: rgba(0, 0, 0, 0);
+				color: #888;
+			}
+		}
+	}
+	ul.beerList{
+		@include bp($small){
+			
+			padding-left: 15px;
+			padding-bottom: 0;
+		}
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+		padding-bottom: $marS;
+		margin-bottom: 0;
+
+		@include bp($small){
+			width: 30%;
+			float: right;
+			text-align: left;
+			padding-bottom: 20px;
+		}
+	}
+	ul>li>ul {
+		display: none;
+
+		@include bp($small){
+			display: block;
+			width: 100%;
+
+		}
+		li{
+			padding-bottom: 5px;
+		}
+		a{
+			color: #333;
+			text-shadow: 0 0 3px #fff;
+			transition: color .3s;
+		}
+		@include bp($med){
+			a:hover {
+				color: #888;
+			}
+		}
+	}
+	img {
+		float: left;
+	}
+	img.right {
+		float: right;
+	}
+	p.numbers{
+		margin-top: $marS;
+	}
+	ul.beerDetail{
+		font-family: $font2;
+		font-size: 1em;
+		margin-top: -10px;
+		margin-bottom: 0;
+		padding-bottom: 0;
+
+		@include bp($small){
+			float: none;
+			width: 100%;
+		}
+
+	}
+	
+	a.top{
+		color: #333;
+		display: inline-block;
+		
+		margin-top: $marM;
+		transition: color, 2s;
+		@include bp($med){
+			&:hover{
+				color: #888;
+			}
+		}
+	}
+	.buttonD{
+		@include bp($small){
+			border: none;
+			text-align: left;
+		}
+	}
+}

@@ -8,6 +8,9 @@
 		font-style: .9em;
 		text-align: center;
 		font-weight: 300;
+		@include bp(700px){
+			text-align: left;
+		}
 	}
 	.contact{
 		margin-bottom: $marL;
@@ -46,5 +49,8 @@
 		text-align: center;
 		display: inline-block;
 		margin-top: 10px;
+	}
+	span.bigger{
+		font-size: 1.1em;
 	}
 }
