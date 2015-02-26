@@ -177,9 +177,12 @@ p{
 }
 .wrapper {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 5px;
     max-width: 850px;
     margin: 0 auto;
+    @include bp(400px){
+        padding: 0 20px;
+    }
 }
 .imageWrapper {
     max-width: 1600px;
