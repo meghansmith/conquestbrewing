@@ -1,7 +1,10 @@
 .mainHeader {
 	background: url("../images/tapsLD.jpg") no-repeat;
 	background-size: cover;
-	
+	height: 620px;
+	.navButton{
+		display: none;
+	}
 	
 	.darkBackground {
 		background-color: rgba(0, 0, 0, .5);
@@ -110,5 +113,52 @@
 .test3{
 	
     @include fadein(5s);
+}
+
+
+header.fixed{
+	height: 45px;
+	background: none;
+	position: fixed;
+	width: 100%;
+	h1, h2, h3{
+		display: none;
+	}
+	a.navButton{
+
+		display: inline-block;
+		color: #ddd;
+		text-decoration: none;
+		position: absolute;
+		top: 10px;
+		right: 10%;
+		font-family: $font1;
+		font-size: 1.2em;
+
+	}
+	div.social{
+		display: none;
+	}
+	nav{
+		margin-bottom: 0;
+	}
+	ul{
+		position: absolute;
+		top: 29px;
+		left:50%;
+
+	}
+	ul a{
+		position: relative;
+		color: #333;
+		border: 1px solid #333;
+		background-color: rgba(255,255,255,.95);
+		z-index: 3;
+		}
+
+	
+	.hide{
+	display: none;
+	}
 }
 
