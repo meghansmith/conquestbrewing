@@ -78,6 +78,12 @@
 			background: none;
 			max-width: 400px;
 			text-shadow: 0px 0px 3px #fff;
+
+			@include bp($med){
+				&:hover{
+					background-color: #333;
+				}
+			}
 		}
 		br {
 			@include bp(665px){
@@ -99,6 +105,13 @@
 		a {
 			font-size: .8em;
 			color: #333;
+			transition: color, .3s;
+
+			@include bp($med){
+				&:hover{
+					color: #888;
+				}
+			}
 		}
 	}
 	.carrierL {

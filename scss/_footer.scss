@@ -33,6 +33,18 @@
 		clear: both;
 	}
 	a{
-		color: #fff;
+		color: #ddd;
+		
+
+		@include bp($med){
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+	span.social{
+		text-align: center;
+		display: inline-block;
+		margin-top: 10px;
 	}
 }

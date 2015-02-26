@@ -43,8 +43,17 @@
 		padding-bottom: 1em;
 	}
 	a{
-		color: #fff;
+		color: #ddd;
 		font-size: 1.1em;
+		transition: color .3s;
+		@include bp($med){
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+	div.social {
+		text-align: center;
 	}
 	.hours{
 		@include bp($small){

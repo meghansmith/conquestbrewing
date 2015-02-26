@@ -78,18 +78,31 @@
 		a{
 			color: #333;
 			text-shadow: 0 0 3px #fff;
+			transition: color .3s;
+		}
+		@include bp($med){
+			a:hover {
+				color: #888;
+			}
 		}
 	}
 	a.buttonD{
 		display: inline-block;
 		width: 100%;
 		border-top: none;
+		transition: color .3s;
 
 		@include bp($small){
 			border: none;
 			padding: 0 0 10px 0;
 			text-align: left;
 			text-decoration: underline;
+		}
+		@include bp($med){
+			&:hover{	
+				color: #888;
+				background-color: rgba(0,0,0,0);
+			}
 		}
 	}
 	li:first-child a.buttonD {
