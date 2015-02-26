@@ -138,7 +138,7 @@ a {
 a.facebook, a.twitter {
   display: inline-block;
   text-indent: -9999px;
-  background: url(../images/socialSprite.png) no-repeat;
+  background: url(../images/socialSprite2.png) no-repeat;
   width: 40px;
   height: 40px;
   transition: all 0s;
