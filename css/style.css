@@ -916,12 +916,14 @@ p {
   .mainFooter span.bigger {
     font-size: 1.1em; }
 
-.brewsHeader p {
-  font-size: 1.5em;
-  padding-bottom: 40px;
-  color: #aea468;
-  font-family: "Nixie One", sans-serif;
-  text-align: center; }
+.brewsHeader {
+  background-attachment: fixed; }
+  .brewsHeader p {
+    font-size: 1.5em;
+    padding-bottom: 40px;
+    color: #aea468;
+    font-family: "Nixie One", sans-serif;
+    text-align: center; }
 
 .brewsPage {
   background-image: url(../images/growlerLight2.jpg);
