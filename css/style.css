@@ -174,7 +174,7 @@ p {
   text-indent: -9999px;
   margin: 0 auto;
   position: absolute;
-  top: 40px; }
+  top: 10px; }
 
 .intro {
   font-weight: bold; }
@@ -355,6 +355,9 @@ p {
   h2,
   h3 {
     page-break-after: avoid; } }
+.notFixed .mainHeader ul {
+  display: block !important; }
+
 .mainHeader {
   background: url("../images/tapsLD.jpg") no-repeat;
   background-size: cover; }
@@ -365,16 +368,21 @@ p {
     @media (min-width: 600px) {
       .mainHeader .darkBackground {
         padding-bottom: 70px; } }
-  .mainHeader .topBar {
-    background-color: #000;
-    height: 40px; }
+  .mainHeader .topBar .wrapper {
+    position: relative; }
   .mainHeader div.social {
-    display: block;
-    position: absolute;
-    right: 15%; }
+    float: right;
+    width: 94px;
+    margin: 0;
+    padding: 0; }
   .mainHeader h1 {
-    display: inline-block;
-    width: 37%; }
+    float: left;
+    width: 37%;
+    padding: 0;
+    margin: 0 0 0 -8px; }
+    @media (min-width: 600px) {
+      .mainHeader h1 {
+        width: 30%; } }
     @media (min-width: 800px) {
       .mainHeader h1 {
         width: 16%; } }
@@ -382,12 +390,14 @@ p {
       .mainHeader h1 {
         width: 20%; } }
   .mainHeader nav {
-    display: inline-block;
-    width: 59%;
+    float: right;
+    width: 60%;
+    clear: right;
     margin-bottom: 50px; }
     @media (min-width: 600px) {
       .mainHeader nav {
-        margin-bottom: 100px; } }
+        margin-bottom: 70px;
+        width: 72%; } }
     @media (min-width: 800px) {
       .mainHeader nav {
         width: 83%;
@@ -403,19 +413,26 @@ p {
   .mainHeader a.buttonL {
     display: inline-block;
     width: 100%;
-    border-top: none; }
+    border-top: none;
+    margin: 0; }
     @media (min-width: 600px) {
       .mainHeader a.buttonL {
-        width: 47%;
+        width: 48%;
         margin-bottom: 10px;
-        margin-right: 6px;
+        margin-left: 6px;
+        margin-right: 0;
         border-top: 1px solid #fff; } }
     @media (min-width: 800px) {
       .mainHeader a.buttonL {
         width: 24.5%;
-        margin-right: 0px; } }
+        margin-left: 0px; } }
+    @media (min-width: 840px) {
+      .mainHeader a.buttonL {
+        font-size: 1em; } }
   .mainHeader li:first-child a.buttonL {
     border-top: 1px solid #fff; }
+  .mainHeader .imageReplace1 h2 {
+    clear: both; }
   .mainHeader h2 {
     color: #aea468;
     text-align: center;
@@ -469,38 +486,71 @@ p {
   /* Opera < 12.1 */
   animation: fadein 5s; }
 
-header.fixed {
-  height: 45px;
-  background: none;
+body.fixed .mainHeader {
+  margin-top: 301px; }
+  @media (min-width: 600px) {
+    body.fixed .mainHeader {
+      margin-top: 271px; } }
+  @media (min-width: 800px) {
+    body.fixed .mainHeader {
+      margin-top: 231px; } }
+  @media (min-width: 840px) {
+    body.fixed .mainHeader {
+      margin-top: 228px; } }
+@media (min-width: 800px) {
+  body.fixed header.brewsHeader {
+    margin-top: 244px; } }
+@media (min-width: 840px) {
+  body.fixed header.brewsHeader {
+    margin-top: 239px; } }
+body.fixed .fixIt {
   position: fixed;
-  width: 100%; }
-  header.fixed h1, header.fixed h2, header.fixed h3 {
-    display: none; }
-  header.fixed a.navButton {
+  width: 100%;
+  margin: 0;
+  top: 0; }
+  body.fixed .fixIt .fixedTopBar {
+    background-color: black;
+    margin: 0 -1000px;
+    padding: 5px 1000px; }
+  body.fixed .fixIt .logoReplace a {
+    top: -5px;
+    width: 120px;
+    height: 98px; }
+  body.fixed .fixIt .navButton {
     display: inline-block;
     color: #ddd;
-    text-decoration: none;
-    position: absolute;
-    top: 10px;
-    right: 10%;
+    font-size: 1.2em;
     font-family: "Nixie One", sans-serif;
-    font-size: 1.2em; }
-  header.fixed div.social {
-    display: none; }
-  header.fixed nav {
-    margin-bottom: 0; }
-  header.fixed ul {
     position: absolute;
-    top: 29px;
-    left: 50%; }
-  header.fixed ul a {
-    position: relative;
-    color: #333;
-    border: 1px solid #333;
-    background-color: rgba(255, 255, 255, 0.95);
-    z-index: 3; }
-  header.fixed .hide {
+    left: 43%;
+    top: 12px; }
+    @media (min-width: 840px) {
+      body.fixed .fixIt .navButton {
+        display: none; } }
+  body.fixed .fixIt ul {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 34px;
     display: none; }
+    @media (min-width: 840px) {
+      body.fixed .fixIt ul {
+        display: block !important;
+        width: 70%;
+        top: 6px;
+        margin: 0;
+        left: 16%; } }
+    body.fixed .fixIt ul a {
+      text-align: left;
+      padding-left: 10px; }
+    @media (min-width: 800px) {
+      body.fixed .fixIt ul a.buttonL {
+        width: 48%;
+        margin-left: 6px; } }
+    @media (min-width: 840px) {
+      body.fixed .fixIt ul a.buttonL {
+        width: 24%;
+        margin-left: 0;
+        font-size: 1em; } }
 
 .brews {
   background-image: url(../images/brewsFlight4.jpg);
@@ -951,14 +1001,19 @@ header.fixed {
   .mainFooter span.bigger {
     font-size: 1.1em; }
 
-.brewsHeader {
-  background-attachment: fixed; }
-  .brewsHeader p {
-    font-size: 1.5em;
-    padding-bottom: 40px;
-    color: #aea468;
-    font-family: "Nixie One", sans-serif;
-    text-align: center; }
+.brewsHeader p {
+  clear: both;
+  font-size: 1.5em;
+  padding-bottom: 40px;
+  color: #aea468;
+  font-family: "Nixie One", sans-serif;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .brewsHeader p {
+      font-size: 1.7em; } }
+  @media (min-width: 800px) {
+    .brewsHeader p {
+      font-size: 2.5em; } }
 
 .brewsPage {
   background-image: url(../images/growlerLight2.jpg);
