@@ -357,8 +357,7 @@ p {
     page-break-after: avoid; } }
 .mainHeader {
   background: url("../images/tapsLD.jpg") no-repeat;
-  background-size: cover;
-  height: 620px; }
+  background-size: cover; }
   .mainHeader .navButton {
     display: none; }
   .mainHeader .darkBackground {
