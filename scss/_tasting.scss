@@ -41,10 +41,13 @@
 	}
 	li{
 		padding-bottom: 1em;
+		color: #ddd;
+		font-size: 1.1em;
+		font-family: $font2;
 	}
 	a{
 		color: #ddd;
-		font-size: 1.1em;
+		font-size: 1em;
 		transition: color .3s;
 		@include bp($med){
 			&:hover{
