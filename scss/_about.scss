@@ -6,6 +6,9 @@
 	padding-bottom: $marL;
 	h2 {
 		color: $gold;
+		@include bp($small){
+			text-align: left;
+		}
 	}
 
 	p{

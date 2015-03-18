@@ -28,6 +28,9 @@
 	h3{
 		color: $red;
 		margin-bottom: $marM;
+		@include bp($small){
+			text-align: left;
+		}
 	}
 	p{
 		margin-bottom: $marM;

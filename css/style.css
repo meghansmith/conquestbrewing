@@ -374,7 +374,7 @@ p {
     float: right;
     width: 94px;
     margin: 0;
-    padding: 0; }
+    padding: 5px 0 0; }
   .mainHeader h1 {
     float: left;
     width: 37%;
@@ -431,6 +431,10 @@ p {
         font-size: 1em; } }
   .mainHeader li:first-child a.buttonL {
     border-top: 1px solid #fff; }
+  .mainHeader .imageReplace1 {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 -500px;
+    padding: 0 500px; }
   .mainHeader .imageReplace1 h2 {
     clear: both; }
   .mainHeader h2 {
@@ -506,6 +510,8 @@ body.fixed .mainHeader {
   @media (min-width: 840px) {
     body.fixed .mainHeader {
       margin-top: 228px; } }
+body.fixed .social {
+  padding: 0; }
 @media (min-width: 800px) {
   body.fixed header.brewsHeader {
     margin-top: 244px; } }
@@ -576,7 +582,8 @@ body.fixed .fixIt {
   @media (min-width: 600px) {
     .brews {
       background-position: left top -285px;
-      padding-top: 100px; } }
+      padding-top: 100px;
+      text-align: left; } }
   @media (min-width: 680px) {
     .brews {
       background-position: left top -385px; } }
@@ -605,7 +612,9 @@ body.fixed .fixIt {
         margin-bottom: 520px; } }
     @media (min-width: 600px) {
       .brews h2 {
-        margin-bottom: 50px; } }
+        margin-bottom: 50px;
+        text-align: left;
+        padding-left: 15px; } }
   .brews h3 {
     color: #932a28;
     text-shadow: 0px 0px 3px #fff; }
@@ -633,7 +642,8 @@ body.fixed .fixIt {
         width: 30%;
         float: right;
         text-align: left;
-        padding-bottom: 20px; } }
+        padding-bottom: 20px;
+        padding-top: 20px; } }
   .brews ul > li > ul {
     display: none; }
     @media (min-width: 600px) {
@@ -680,6 +690,9 @@ body.fixed .fixIt {
     margin-top: -16px; }
   .tasting h2 {
     color: #aea468; }
+    @media (min-width: 600px) {
+      .tasting h2 {
+        text-align: left; } }
   .tasting p {
     color: #fff;
     font-weight: 300; }
@@ -740,15 +753,23 @@ body.fixed .fixIt {
     text-shadow: 0px 0px 3px #fff;
     margin-top: 0;
     padding-top: 70px; }
+    @media (min-width: 600px) {
+      .findBeer h2 {
+        text-align: left; } }
   .findBeer h3 {
     color: #932a28;
     margin-top: 0;
     padding-top: 0;
     clear: both; }
+    @media (min-width: 600px) {
+      .findBeer h3 {
+        text-align: left; } }
   .findBeer form {
     font-family: "Open Sans", sans-serif;
     font-size: 1.25em;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 30px 30px 70px; }
     .findBeer form h3 {
       font-size: 1.2em; }
     .findBeer form input[type=text] {
@@ -835,6 +856,9 @@ body.fixed .fixIt {
   padding-bottom: 70px; }
   .about h2 {
     color: #aea468; }
+    @media (min-width: 600px) {
+      .about h2 {
+        text-align: left; } }
   .about p {
     color: #fff;
     font-weight: 300;
@@ -921,6 +945,9 @@ body.fixed .fixIt {
   .team h3 {
     color: #932a28;
     margin-bottom: 50px; }
+    @media (min-width: 600px) {
+      .team h3 {
+        text-align: left; } }
   .team p {
     margin-bottom: 50px; }
   .team .quote2, .team .quote3 {
@@ -1038,18 +1065,23 @@ body.fixed .fixIt {
   margin-top: -25px; }
   .brewsPage .wrapper {
     background-color: rgba(255, 255, 255, 0.95); }
+  .brewsPage div.beer {
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: -40px;
+    padding-top: 40px; }
   .brewsPage h2, .brewsPage h3, .brewsPage h4 {
     color: #932a28;
-    text-shadow: 0 0 5px #fff; }
+    text-shadow: 0 0 5px #fff;
+    text-align: left; }
   .brewsPage h2 {
     margin-top: 70px; }
   .brewsPage h3 {
     clear: left; }
     .brewsPage h3.clear {
       clear: both;
-      padding-top: 50px; }
+      padding-top: 30px; }
   .brewsPage h4 {
-    margin-top: 70px;
     font-size: 1.5em;
     clear: left;
     text-align: left; }
@@ -1063,7 +1095,7 @@ body.fixed .fixIt {
         color: #888; } }
   @media (min-width: 600px) {
     .brewsPage ul.beerList {
-      padding-left: 15px;
+      padding-left: 30px;
       padding-bottom: 0; } }
   .brewsPage ul {
     list-style: none;
