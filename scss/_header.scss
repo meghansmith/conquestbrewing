@@ -9,7 +9,8 @@
 	}
 	
 	.darkBackground {
-		background-color: rgba(0, 0, 0, .5);
+		background-color: rgba(0, 0, 0, .65);
+
 			@include bp($small){
 			padding-bottom: $marL;
 		}
@@ -20,7 +21,7 @@
 	div.social{
 		float: right;
 		width: 94px;
-		margin: 0;
+		margin: 0; 
 		padding: 5px 0 0;
 
 		@include bp(400px){
@@ -94,11 +95,7 @@
 		border-top: 1px solid #fff;
 	}
 
-	.imageReplace1 {
-		background-color: rgba(0,0,0,.2);
-		margin: 0 -500px;
-		padding: 0 500px;
-	}
+	
 	.imageReplace1 h2{
 		clear: both;
 	}
